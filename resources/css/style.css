@@ -130,6 +130,17 @@ h2:after{
     margin-bottom: 10px;
 }
 
+.icon-small{
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color:#e67e22 ;
+    font-size: 120%;
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+    margin-right: 10px;
+}
 
 
 
@@ -239,6 +250,10 @@ h2:after{
 }
 
 /* ...How its works...How */
+.section-steps{
+    background-color: #f4f4f4;
+}
+
 .steps-box{
     margin-top:30px;
 }
@@ -284,3 +299,31 @@ h2:after{
     width: auto;
     margin-right: 10px; ;
 }
+
+
+/* ...........city ...........city */
+.box img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.city-features{
+    margin-bottom: 5px;
+}
+
+/* links...........2s */
+
+.city-feature a{
+    color: #e67e22;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #e67e22;
+    /* border: 2px solid rgb(7, 1, 0); */
+    transition: border-bottom 0.2s , color 0.2s;
+}
+.city-feature a:hover{
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
+
