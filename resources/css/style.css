@@ -16,10 +16,32 @@ html{
     text-rendering: optimizeLegibility;
 }
 
+.clearfix{
+    zoom: 1;
+}
+.clearfix:after{
+    content: '-';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+
+/* Resuable content  .........*/
 
 .row{
     max-width: 1140px;
     margin:0 auto;
+}
+
+section{
+    padding: 80px 0;
+}
+
+.box{
+    padding: 1%;
 }
 
 header{
@@ -41,15 +63,76 @@ header{
 
 /* Heading */
 
-h1{
-    margin: 0;
-    color: white;
-    font-size: 200% ;
+h1,h2,h3{
+   
     font-weight: 300;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    word-spacing: 4px;
+    
+  
 }
+
+h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 240% ;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3{
+    font-size: 110%;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+
+h2:after{
+    display: block;
+    height: 2px;
+    background-color:#e67e22 ;
+    content: " ";
+    width: 180px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+
+/* ..........Paragraphs/////////////// */
+
+.long-copy{
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    
+}
+
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+
+}
+
+/* ---------icon --------------- */
+
+.icon-big{
+    font-size: 300%;
+    display: block;
+    color:#e67e22 ;
+    margin-bottom: 10px;
+}
+
+
+
+
 
 /* buttton  */
 
@@ -110,4 +193,94 @@ h1{
 
 .main-nav li:hover{
     border-bottom: 2px solid #e67e22 ;
+}
+   /* more features ...................btn */
+
+.section-features .long-copy{
+    margin-bottom: 30px;
+}
+
+
+   /* meals ...................btn */
+   .section-meals{
+       padding: 0;
+   }
+
+.meals-showcase{
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li{
+    display: block;
+    float: left;
+    width:25% ;
+}
+
+.meal-photo{
+    width:100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+
+}
+
+.meal-photo img{
+    opacity: 0.8;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.9s, opacity 0.6s;
+}
+
+.meal-photo img:hover{
+    opacity: 1;
+    transform:scale(1.03);
+}
+
+/* ...How its works...How */
+.steps-box{
+    margin-top:30px;
+}
+
+.steps-box:first-child{
+    text-align: right;
+    padding-right: 3%;
+}
+
+.steps-box:last-child{
+    padding-left: 3%;
+}
+
+.app-screen{
+    width: 35%;
+    margin-left:30%;
+}
+
+.works-steps{
+    margin-bottom: 50px;
+}
+
+.works-steps:last-of-type{
+    margin-bottom: 80px;
+}
+
+.works-steps div{
+    color:#e67e22 ;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    font-size:150%;
+    margin-right: 25px;
+    padding: 5px;
+    float: left;
+}
+
+.btn-app img{
+    height: 50px;
+    width: auto;
+    margin-right: 10px; ;
 }
