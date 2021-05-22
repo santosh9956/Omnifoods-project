@@ -50,6 +50,7 @@ header{
     background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url('/resources/css/img/hero.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .hero-text-box{
@@ -326,4 +327,51 @@ h2:after{
     color: #555;
     border-bottom: 1px solid transparent;
 }
+
+/* ............Testimonials ............Testimonials */
+
+.section-testimonials{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.801),rgba(0, 0, 0, 0.801)) ,url('./img/back-customers.jpg');
+    color: white;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+
+}
+
+blockquote:before{
+    content: "\201C";
+    font-size: 400%;
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 0;
+
+}
+
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    
+}
+
+cite{
+    font-size: 90%;
+    margin-top: 25px;
+
+}
+
+
+cite img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+
+
+
 
