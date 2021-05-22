@@ -163,9 +163,13 @@ h2:after{
     border:  1px solid #e67e22;
     margin-right: 15px;
 }
+.btn-full:hover{
+    background-color:#ce670e ;
+}
 
 .btn-ghost{
-    border:  1px solid #e67e22;
+    border:  1px solid #f37303;
+    color: #e67e22;
 }
 
 .btn-ghost:hover{
@@ -335,17 +339,17 @@ h2:after{
     color: white;
     background-size: cover;
     background-attachment: fixed;
-    position: relative;
+    
 
 }
 
 blockquote:before{
     content: "\201C";
-    font-size: 400%;
+    font-size: 500%;
     display: block;
     position: absolute;
-    top: 5px;
-    left: 0;
+    top: -5px;
+    left: -5px;
 
 }
 
@@ -353,25 +357,77 @@ blockquote{
     padding: 2%;
     font-style: italic;
     line-height: 145%;
-    
+    position: relative;
+    margin-top: 40px;
 }
 
 cite{
     font-size: 90%;
     margin-top: 25px;
-
+    display: block;
+    display: flex;
+    align-items: center;
+    /* border: 2px solid red; */
 }
 
 
 cite img{
-    height: 50px;
-    width: 50px;
+    height: 45px;
+    /* width: 50px; */
     border-radius: 50%;
     margin-right: 10px;
 }
 
+ /* Signup section ..........2s */
 
+ .section-plans{
+     background-color:#f4f4f4 ;
+ }
 
+ .plan-box{
+     background-color: white;
+     border-radius: 5px;
+     width: 90%;
+     margin-left: 5%;
+    box-shadow: 0 2px 2px #efefef;
+ }
 
+.plan-box div{
+    padding: 15px; 
+    border-bottom: 1px solid rgba(240, 238, 238, 0.65);
+    /* text-align: center; */
+}
+.plan-box div:first-child{
+    background-color: rgba(228, 222, 222, 0.753);
+}
 
+.plan-box div:last-child{
+    text-align: center;
+}
+
+.plan-price span{
+    font-size: 30%;
+    font-weight: 300;
+
+}
+
+.plan-price{
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 300;
+    color: #e67e22;
+}
+
+.plan-price-meal{
+    font-size: 80%;
+
+}
+
+.plan-box ul{
+    list-style:none;
+}
+
+.plan-box ul li{
+    padding:5px 0;
+}
 
