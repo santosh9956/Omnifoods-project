@@ -452,5 +452,62 @@ input[type=checkbox]{
 
 *:focus{outline: none;}
 
+/* footer-------------------------- */
 
+footer{
+    background-color: rgb(39, 37, 37);
+    padding: 60px;
+}
 
+.footer-nav{
+    list-style: none;
+    float: left;
+
+}
+
+.social-links{
+    list-style: none;
+    float:right;
+
+}
+
+.footer-nav li, .social-links li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child, .social-links li:last-child{
+    margin-right: 0;
+}
+
+.footer-nav li a, .social-links li a{
+    text-decoration: none;
+    border: 0;
+    color: rgb(148, 144, 140);
+}
+.footer-nav li a:hover{
+    color: white;
+}
+
+.ion-social-facebook:hover{
+    color: #5970de;
+}
+.ion-social-twitter:hover{
+    color: #2da3e8;
+}
+.ion-social-googleplus:hover{
+    color: #f56832;
+}
+.ion-social-instagram:hover{
+    color: #da1a84;
+}
+
+.social-links li a{
+    font-size: 100%;
+}
+
+footer p{
+    color: rgb(97, 93, 89);
+    text-align: center;
+    margin-top: 50px;
+}
