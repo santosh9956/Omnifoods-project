@@ -148,7 +148,7 @@ h2:after{
 
 /* buttton  */
 
-.btn{
+.btn,input[type=submit]{
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -158,12 +158,12 @@ h2:after{
     transition:background-color 0.2s, border o.2s, color 0.2s; 
 }
 
-.btn-full{
+.btn-full,input[type=submit]{
     background-color:#e67e22 ;
     border:  1px solid #e67e22;
     margin-right: 15px;
 }
-.btn-full:hover{
+.btn-full:hover,input[type=submit]:hover{
     background-color:#ce670e ;
 }
 
@@ -430,4 +430,27 @@ cite img{
 .plan-box ul li{
     padding:5px 0;
 }
+
+/* Form data ................. */
+.contact-form{
+    width: 60%;
+    margin: 0 auto;
+}
+input[type=text],input[type=email],select,textarea{
+    width: 100%;
+    padding: 7px;
+    /* border-radius: 1px ; */
+}
+
+textarea{
+    height: 100px;
+}
+
+input[type=checkbox]{
+    margin: 10px 5px 10px 0;
+}
+
+*:focus{outline: none;}
+
+
 
