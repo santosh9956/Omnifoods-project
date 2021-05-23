@@ -148,7 +148,7 @@ h2:after{
 
 /* buttton  */
 
-.btn{
+.btn,input[type=submit]{
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -158,12 +158,12 @@ h2:after{
     transition:background-color 0.2s, border o.2s, color 0.2s; 
 }
 
-.btn-full{
+.btn-full,input[type=submit]{
     background-color:#e67e22 ;
     border:  1px solid #e67e22;
     margin-right: 15px;
 }
-.btn-full:hover{
+.btn-full:hover,input[type=submit]:hover{
     background-color:#ce670e ;
 }
 
@@ -431,3 +431,83 @@ cite img{
     padding:5px 0;
 }
 
+/* Form data ................. */
+.contact-form{
+    width: 60%;
+    margin: 0 auto;
+}
+input[type=text],input[type=email],select,textarea{
+    width: 100%;
+    padding: 7px;
+    /* border-radius: 1px ; */
+}
+
+textarea{
+    height: 100px;
+}
+
+input[type=checkbox]{
+    margin: 10px 5px 10px 0;
+}
+
+*:focus{outline: none;}
+
+/* footer-------------------------- */
+
+footer{
+    background-color: rgb(39, 37, 37);
+    padding: 60px;
+}
+
+.footer-nav{
+    list-style: none;
+    float: left;
+
+}
+
+.social-links{
+    list-style: none;
+    float:right;
+
+}
+
+.footer-nav li, .social-links li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child, .social-links li:last-child{
+    margin-right: 0;
+}
+
+.footer-nav li a, .social-links li a{
+    text-decoration: none;
+    border: 0;
+    color: rgb(148, 144, 140);
+}
+.footer-nav li a:hover{
+    color: white;
+}
+
+.ion-social-facebook:hover{
+    color: #5970de;
+}
+.ion-social-twitter:hover{
+    color: #2da3e8;
+}
+.ion-social-googleplus:hover{
+    color: #f56832;
+}
+.ion-social-instagram:hover{
+    color: #da1a84;
+}
+
+.social-links li a{
+    font-size: 100%;
+}
+
+footer p{
+    color: rgb(97, 93, 89);
+    text-align: center;
+    margin-top: 50px;
+}
