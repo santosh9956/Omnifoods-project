@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* html {
+    scroll-behavior: smooth;
+  } */
 
 html{
     width: 100%;
@@ -14,7 +16,9 @@ html{
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .clearfix{
@@ -179,13 +183,23 @@ h2:after{
 }
 
 
-/* logo  */
-.logo{
+/* logo /....................... */
+.logo {
     height: 100px;
     width: auto;
     float: left;
     margin-top: 20px;
 }
+
+.logo-black{
+    display: none;
+    height: 50px;
+    float: left;
+    margin-top: 10px;
+    margin:6px 0;
+}
+
+/* ..............Main Nav ..............  */
 
 .main-nav{
     float: right;
@@ -211,6 +225,38 @@ h2:after{
 .main-nav li:hover{
     border-bottom: 2px solid #e67e22 ;
 }
+
+/* ...........sticky nav ............... */
+.main-nav{
+    margin-top: 18px;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255);
+    box-shadow: 0 3px 3px #efefef;
+    z-index: 1;
+}
+
+.sticky .main-nav li a{
+    /* border: 2px solid red; */
+    padding: 16px 0;
+    color:#555;
+}
+
+.sticky .logo{
+    display:none;
+}
+ 
+.sticky .logo-black{
+    display: block;
+}
+
+
+
    /* more features ...................btn */
 
 .section-features .long-copy{
