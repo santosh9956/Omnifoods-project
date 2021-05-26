@@ -226,6 +226,19 @@ h2:after{
     border-bottom: 2px solid #e67e22 ;
 }
 
+.mobile-nav-icon{
+    float: right;
+    margin-top:30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i{
+    font-size:200% ;
+    color: white;
+}
+
+
 /* ...........sticky nav ............... */
 .main-nav{
     margin-top: 18px;
@@ -559,7 +572,22 @@ footer p{
     margin-top: 50px;
 }
 
+/* ...........animation ..............  */
+.js-wp-1,.js-wp-2,.js-wp-3{
+    opacity: 0;
+    /* animation-duration: 1s;
+   -webkit-animation-duration: 1s; */
+}
 
+.js-wp-1.animated,.js-wp-2.animated,.js-wp-3.animated{
+    opacity: 1;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+}
+
+.js-wp-4{
+    animation-duration: 1s;
+}
 
 
 /* media query------------------------ */
@@ -655,7 +683,42 @@ footer p{
 
     .main-nav{
         display: none;
+    } 
+
+.sticky .main-nav li a{
+    padding:8px 0px ;
+    color: #555;
+}
+
+    .mobile-nav-icon{
+        display: inline-block;
     }
+
+    .main-nav{
+        float: left;
+        margin-top: 20px;
+    }
+
+    .main-nav li{
+        display: block;
+    }
+
+    .main-nav li a{
+        display: block;
+        border: 0;
+        font-size: 100%;
+        font-weight: 400;
+    }
+
+    .sticky .logo-black{
+        margin-top: 25px;
+        width: 100px;
+        height: 100px;
+    }
+
+.sticky .mobile-nav-icon i{
+    color: #555;
+}
 
     h1{
         font-size: 100%;

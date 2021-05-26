@@ -44,5 +44,64 @@ $(function() {
   });
 });
 
+// ..................Animation on scroll . ........
+
+var waypoint = new Waypoint({
+    element: $('.js-wp-1'),
+    handler: function(direction) {
+            $('.js-wp-1').addClass('animated animate__fadeIn')
+    },
+            offset:"50%"
+});
+
+
+var waypoint = new Waypoint({
+    element: $('.js-wp-2'),
+    handler: function(direction) {
+            $('.js-wp-2').addClass('animated animate__fadeInUp')
+    },
+            offset:"90%"
+});
+
+
+var waypoint = new Waypoint({
+    element: $('.js-wp-3'),
+    handler: function(direction) {
+            $('.js-wp-3').addClass('animated animate__fadeIn')
+    },
+            offset:"60%"
+});
+
+var waypoint = new Waypoint({
+    element: $('.js-wp-4'),
+    handler: function(direction) {
+            $('.js-wp-4').addClass('animated animate__pulse')
+    },
+            offset:"70%"
+});
+
+console.log("Santosh");
+// $('js-wp-1').waypoint(function(direction){
+//     $('.js-wp-1').addClass('animated fadeIn');
+// },{offset:'50%'});
+
+// .... mobile navigation ........... 
+$('.js-nav-icon').click(function () {
+    var nav = $('.js-main-nav');
+    var icon = $('.js-nav-icon i');
+    nav.slideToggle(200);
+    console.log("before if");
+    if (icon.hasClass('ion-navicon-round')){
+      icon.addClass('ion-close-round')
+      console.log("in if");
+      icon.removeClass('ion-navicon-round')
+    }else{
+      icon.addClass('ion-navicon-round')
+      icon.removeClass('ion-close-round')
+      console.log("else");
+    }
+  });
+
+
 
 });
